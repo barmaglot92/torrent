@@ -1,0 +1,26 @@
+{
+  "name": "torrent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env MODE=development DB_NAME=torrent DB_HOST=localhost DB_USER=myUserAdmin DB_PASS=abc123 RLOGIN=barmaglot92xxx RPASS=sUYZL nodemon index.js",
+    "start:prod": "cross-env MODE=production DB_NAME=torrent DB_HOST=localhost DB_USER=myUserAdmin DB_PASS=abc123 RLOGIN=barmaglot92xxx RPASS=sUYZL index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "kafkajs": "^1.15.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "mongodb": "^4.1.3",
+    "mongodb-queue": "^4.0.0",
+    "nodemon": "^2.0.14",
+    "rutracker-api": "^1.1.2",
+    "webtorrent-hybrid": "^5.0.1"
+  }
+}
