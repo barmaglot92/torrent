@@ -1,0 +1,18 @@
+{
+  "name": "loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env AWS_ACCESS_KEY_ID='DQUW74WKWHZZDQRQTN24' AWS_SECRET_ACCESS_KEY='VSVU2bCU6ZZ579KDVrnWbWt4l7/3/A1M0U+/G4e1wbg' nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "kafkajs": "^1.15.0",
+    "shared": "file:packages/shared",
+    "webtorrent": "^1.5.8"
+  }
+}

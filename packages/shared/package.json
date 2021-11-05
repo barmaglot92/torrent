@@ -1,0 +1,17 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate-mongo": "cross-env DB_NAME=torrent DB_HOST=localhost DB_USER=myUserAdmin DB_PASS=abc123 migrate-mongo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1022.0",
+    "migrate-mongo": "^8.2.3"
+  }
+}
